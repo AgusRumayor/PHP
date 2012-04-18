@@ -1,0 +1,8 @@
+Agustin Rumayor PHP Code
+
+Content:
+
+  - includes (methodologies, flow)
+  - lib
+    -classes (form handlers, container handler, header handler, db handler(not finished))
+    -tools (form helpers, buttons, ...)
