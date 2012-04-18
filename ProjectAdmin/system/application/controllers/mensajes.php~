@@ -1,0 +1,16 @@
+<?php
+class mensajes extends Controller {
+	
+	function mensajes() {
+	      parent::Controller();
+	}
+
+	function index()
+	{
+		
+		$this->load->library('session');
+		$V=$this->session->userdata['Vector'];
+		$this->load->view('mensajes', $V);
+	}
+}
+?>

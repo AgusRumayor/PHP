@@ -1,0 +1,15 @@
+<?php
+session_start();
+class mensajes extends Controller {
+	
+	function mensajes() {
+	      parent::Controller();
+	}
+
+	function index()
+	{
+
+		$this->load->view('mensajes');
+}
+}
+?>

@@ -1,0 +1,14 @@
+<?php  $this->load->view('header');  ?>
+
+<p><?php echo 'No hay registros'; ?></p>
+<p><?php echo anchor(array($base_uri, 'add'), 'Crear Nuevo'); ?></p>
+<p><?php $this->CI =& get_instance(); 
+		$this->base_url = $this->CI->config->site_url().'/';
+        $this->base_uri = '';
+		for($i = 1; $i <= 3; $i++):        
+            $this->base_url .= ($i > 1) ? $this->CI->uri->slash_segment($i, 'leading') : $this->CI->uri->segment($i);
+            $this->base_uri .= ($i > 1) ? $this->CI->uri->slash_segment($i, 'leading') : $this->CI->uri->segment($i);
+        endfor;
+	echo $this->base_url ?></p>
+
+<?php $this->load->view('footer'); ?>

@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Registro</title>
+
+</head>
+<body>
+
+<?=$this->validation->error_string; ?>
+
+<?=form_open('form'); ?>
+<h4>Bienvenido</h4>
+<h5>Usuario</h5>
+<input type="text" name="username" value="" size="50" />
+
+
+<input type="hidden" name="password" value="1" size="50" />
+
+
+<input type="hidden" name="passconf" value="1" size="50" />
+
+<h5>Estilo</h5>
+<select name="email">
+<option value=/Agus_Style/Agus>Agus Style</option>
+<option value=/Fer_Style/Fer>Fernando Style</option>
+<option value=/VicStyle/Vic>Victor Style</option>
+</select>
+
+<div><input type="submit" name="Enviar" value="Entrar" /></div>
+
+</form>
+
+</body>
+</html>

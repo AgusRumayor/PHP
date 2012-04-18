@@ -1,0 +1,64 @@
+<?php
+$this->load->view('header');
+?>
+	<div id="content">
+		<div id="primaryContentContainer">
+			<div id="primaryContent">
+				<div class="box">
+					<h2>Bienvenidos</h2>
+					<div class="boxContent">
+						<p><strong>Project Coord</strong> es un portal que permite la coordinacion y administracion de proyectos. Crea tu equipo y asesora las actividades, comparte informacion y mejora los resultados de tus proyectos. Disfrutenlo :).</p>
+						<p>El sitio es desarrollado por alumnos del Tecnologico de Monterrey Campus Zacatecas, dentro de la materia de Desarrollo de Aplicaciones Avanzadas en Internet</p>
+					</div>
+				</div>
+				<div class="box">
+					<h3><?=$this->validation->error_string; ?></h3>
+					
+		<div id="secondaryContent">
+		  <div class="box boxA">
+            <div class="boxContent">
+              <?=form_open('form'); ?>
+                <div> 
+                	<span>Matricula:</span>
+                    <input type="text" class="text" maxlength="32" name="username" />
+                    <span>Password:</span>
+                    <input type="password" class="text" maxlength="32" name="password" />
+                    <span>Ingresar como:</span>
+                    <select name="email">
+					<option value=Profesor>Profesor </option>
+					<option value=Alumno>Alumno </option>
+					</select>
+                    <input type="hidden" name="passconf" value="1" size="50" />
+                    <input type="submit" class="button" value="Entrar" />
+                  </div>
+              </form>
+            </div>
+	      </div>
+		  <div class="box">
+				<h3>Ipsum Dolorem</h3>
+				<div class="boxContent">
+					<ul>
+						<li><a href="#">Sagittis Bibendum Erat</a></li>
+						<li><a href="#">Malesuada Turpis</a></li>
+						<li><a href="#">Quis Gravida Massa</a></li>
+						<li><a href="#">Inerat Viverra Ornare</a></li>
+					</ul>
+				</div>
+		  </div>
+
+			<div class="box">
+				<h3>Fusce dolor tristique</h3>
+				<div class="boxContent">
+					<p>Sed eu eros imperdiet eros interdum blandit. Vivamus sagittis bibendum erat. Curabitur malesuada. <a href="#">More&#8230;</a></p>
+				</div>
+			</div>
+
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div id="footer">
+		<p>Copyright &copy; 2006 Sitename.com. Designed by <a href="http://www.freecsstemplates.org">Free CSS Templates</a></p>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<?php
+$this->load->view('Master/header');
+?>
+<link href="http://localhost/ProyectoFinal/system/application/views/default.css" rel="stylesheet" type="text/css" />
+<body>
+<h2 align="center">Has salido del sistema</h2>
+<div class="box">
+  <h3><a href= "http://localhost/ProyectoFinal/index.php/form_master">Volver a entrar</a></h3>
+  
+</div>
+</body>
+

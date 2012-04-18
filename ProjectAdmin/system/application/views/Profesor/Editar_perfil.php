@@ -1,0 +1,27 @@
+<?php
+$this->load->view('header');
+?>
+<link href="http://localhost/ProyectoFinal/system/application/views/default.css" rel="stylesheet" type="text/css" />
+<body>
+<h2 align="center">Editar Perfil</h2>
+<div class="box">
+  <h3>&nbsp;</h3>
+  <div class="boxContent">
+<?=form_open('Profesor/Editar'); ?>
+                <div> 
+                <span>Contraseña:</span><br>
+                    <input type="password" class="text" maxlength="32" name="password" /><br>
+                    <span>Confirmar contraseña:</span><br>
+                    <input type="password" class="text" maxlength="32" name="passconf" /><br>
+                    <span>Foto:</span><br>
+                    <input type="text" name="foto" value="1" size="50" /><br>
+                    <span>Nombre:</span><br>
+                    <input type="text" name="nombre" value="1" size="50" /><br>
+                    <input type="submit" class="button" value="Cambiar" /><br>
+                  </div>
+              </form>
+
+  </div>
+</div>
+</body>
+

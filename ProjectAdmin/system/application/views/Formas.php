@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Project Coord</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://localhost/ProyectoFinal/system/application/views/default.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="outer">
+	<div id="header">
+		<h1><a href="#">Project Coord</a></h1>
+		<h2>by Agus, Victor, Fernando</h2>
+	</div>
+	<div id="menu">
+		<ul>
+			<li class="first"><a href="#" accesskey="1" title="">Inicio</a></li>
+			<li><a href="#" accesskey="2" title="">About Us</a></li>
+			<li><a href="#" accesskey="3" title="">Proyectos</a></li>
+			<li><a href="#" accesskey="5" title=""> Salir</a></li>
+		</ul>
+  </div>
+	<div id="content">
+		<div id="primaryContentContainer">
+			<div id="primaryContent">
+				<div class="box">
+					<h2>Bienvenidos</h2>
+					<div class="boxContent">
+						<p><strong>Project Coord</strong> es un portal que permite la coordinacion y administracion de proyectos. Crea tu equipo y asesora las actividades, comparte informacion y mejora los resultados de tus proyectos. Disfrutenlo :).</p>
+						<p>El sitio es desarrollado por alumnos del Tecnologico de Monterrey Campus Zacatecas, dentro de la materia de Desarrollo de Aplicaciones Avanzadas en Internet</p>
+					</div>
+				</div>
+				<div class="box">
+					<h3><?=$this->validation->error_string; ?>Example Blockquote</h3>
+					<div class="boxContent">
+						<blockquote>
+								<p>Aliquam gravida massa eu arcu. Fusce mollis tristique sem. Sed eu eros imperdiet eros interdum blandit. Vivamus sagittis bibendum erat. Curabitur malesuada turpis nec ante. Suspendisse quis felis. Suspendisse potenti. Nullam et orci in erat viverra ornare. Nunc pellentesque. Sed vestibulum blandit nisl. Quisque elementum convallis purus.</p>
+						</blockquote>
+					</div>
+				</div>
+<div class="box">
+					<h3>Example Unordered List</h3>
+					<div class="boxContent">
+						<ul>
+							<li><a href="#">Suspendisse quis gravida massa felis.</a></li>
+							<li><a href="#">Vivamus sagittis bibendum erat.</a></li>
+							<li><a href="#">Nullam et orci in erat viverra ornare.</a></li>
+							<li><a href="#">Suspendisse quis gravida massa felis.</a></li>
+							<li><a href="#">Curabitur malesuada turpis nec ante.</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="box">
+					<h3>Example Table</h3>
+					<div class="boxContent">
+						<table>
+							<tr>
+								<th>Date</th>
+								<th>Title</th>
+								<th>Description</th>
+							</tr>
+							<tr class="rowA">
+								<td>December 1, 2006</td>
+								<td>Sed vestibulum blandit</td>
+								<td>Vivamus sollicitudin dolor sit amet eros. Vivamus ligula. Sed pretium turpis eu ipsum. Sed rutrum sapien id arcu.</td>
+							</tr>
+							<tr class="rowB">
+								<td>November 28, 2006</td>
+								<td>Augue non nibh</td>
+								<td>Nam adipiscing urna ac consequat dignissim massa est sodales sem.</td>
+							</tr>
+							<tr class="rowA">
+								<td>November 23, 2006</td>
+								<td>Fusce ut diam bibendum</td>
+								<td>Vestibulum quis urn nulla facilis nam malesuada cursus turpis.</td>
+							</tr>
+							<tr class="rowB">
+								<td>November 21, 2006</td>
+								<td>Maecenas et ipsum</td>
+								<td>Vivamus mi lectus gravida scelerisque, ultrices vitae cursus in neque.</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="secondaryContent">
+		  <div class="box boxA">
+            <div class="boxContent">
+              <?=form_open('form'); ?>
+                <div> 
+                	<span>Matricula:</span>
+                    <input type="text" class="text" maxlength="32" name="username" />
+                    <span>Password:</span>
+                    <input type="password" class="text" maxlength="32" name="password" />
+                    <span>Ingresar como:</span>
+                    <select name="email">
+					<option value=P>Profesor</option>
+					<option value=A>Alumno</option>
+					<option value=C>Coordinador</option>
+					</select>
+                    <input type="hidden" name="passconf" value="1" size="50" />
+                    <input type="submit" class="button" value="Entrar" />
+                  <a href="#">Register account</a> </div>
+              </form>
+            </div>
+	      </div>
+		  <div class="box">
+				<h3>Ipsum Dolorem</h3>
+				<div class="boxContent">
+					<ul>
+						<li><a href="#">Sagittis Bibendum Erat</a></li>
+						<li><a href="#">Malesuada Turpis</a></li>
+						<li><a href="#">Quis Gravida Massa</a></li>
+						<li><a href="#">Inerat Viverra Ornare</a></li>
+					</ul>
+				</div>
+		  </div>
+
+			<div class="box">
+				<h3>Fusce dolor tristique</h3>
+				<div class="boxContent">
+					<p>Sed eu eros imperdiet eros interdum blandit. Vivamus sagittis bibendum erat. Curabitur malesuada. <a href="#">More&#8230;</a></p>
+				</div>
+			</div>
+
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div id="footer">
+		<p>Copyright &copy; 2006 Sitename.com. Designed by <a href="http://www.freecsstemplates.org">Free CSS Templates</a></p>
+	</div>
+</div>
+</body>
+</html>

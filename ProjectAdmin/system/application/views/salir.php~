@@ -1,0 +1,9 @@
+<?php
+$this->load->view('header');
+?>
+<link href="http://localhost/ProyectoFinal/system/application/views/default.css" rel="stylesheet" type="text/css" />
+<body>
+<h2 align="center">Has salido del sistema</h2>
+
+</body>
+

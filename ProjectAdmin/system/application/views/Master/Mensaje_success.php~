@@ -1,0 +1,4 @@
+<?php
+	$this->load->view('Master/header');
+	echo "<H2>El mensaje $Asunto ha sido Enviado</H2>";
+?>

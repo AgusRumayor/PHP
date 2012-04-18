@@ -1,0 +1,8 @@
+<?
+	$Servidor = localhost;
+	$Usuario = "root";
+	$Password = "";
+	$BaseDeDatos = "Sistema_Inventarios";
+	$conexion=mysql_connect($Servidor,$Usuario,$Password) or die ("Nel no pude");
+	$descriptor=mysql_select_db($BaseDeDatos,$conexion);
+?>

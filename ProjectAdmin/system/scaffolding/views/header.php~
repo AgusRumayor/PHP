@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+
+<title><?php echo 'Panel de Control'; ?></title>
+
+<style type='text/css'>
+<?php $this->file(BASEPATH.'scaffolding/views/style.css'); ?>
+</style>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv='expires' content='-1' />
+<meta http-equiv= 'pragma' content='no-cache' />
+
+</head>
+<body>
+<div id="outer">
+	<div id="header">
+		<h1><a href="#">Project Coord</a></h1>
+		<h2>by Agus, Victor, Fernando</h2>
+	</div>
+	<div id="menu">
+		<ul>
+			<li class="first"><a href="Inicio" accesskey="1" title="">Inicio</a></li>
+			<li><a href="#" accesskey="2" title="">About Us</a></li>
+			<li><a href="#" accesskey="3" title="">Proyectos</a></li>
+			<li><a href="#" accesskey="5" title=""> Salir</a></li>
+		</ul>
+  </div>
+<div id="header">
+<div id="header_left">
+<h3>Panel de control&nbsp; </h3>
+</div>
+<div id="header_right">
+<?php echo anchor(array($base_uri, 'view'), 'Ver Todos'); ?> &nbsp;&nbsp;|&nbsp;&nbsp;
+<?php echo anchor(array($base_uri, 'add'),  'Crear Nuevo'); ?>
+</div>
+</div>
+
+<br clear="all">
+<div id="outer">
