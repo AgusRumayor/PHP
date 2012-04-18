@@ -1,0 +1,8 @@
+<?php
+    $dbConfiguration = Array();
+	$dbConfiguration['dbType']= "MySQL";
+	$dbConfiguration['dbServer']= "localhost";
+	$dbConfiguration['dbName']= "RestApp";
+	$dbConfiguration['dbUser']= "root";
+	$dbConfiguration['dbPass']= "";
+?>
